@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    /* Shorthand background-- color, image, repeat, attachment, position */
+    background: url("background.jpg") no-repeat fixed right top,
+                url("trees.jpg") no-repeat fixed left bottom;
+    background-color: tan;
+}
+
+/* General navigation control */
+.navlist {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0;
+    font-size: large;
+}
+
+.navlist li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+/* Logo specific modifications */
+.logo li a {
+    float: left;
+    padding: 14px 4px;
+}
+
+.logo li:first-child a img{
+    width: 60px;
+    height: auto;
+}
+
+.logo li:first-child a {
+    padding: 0;
+}
+
+/* navigation tab specific highlighting */
+.tabs li a{
+    float: right;
+}
+
+.tabs li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+}
+
+.tabs li a:active {
+    background-color: (255, 255, 255, 0.4);
+    border-radius: 25px;
+}
