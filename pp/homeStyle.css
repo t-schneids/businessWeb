@@ -1,9 +1,13 @@
 body {
     margin: 0;
     /* Shorthand background-- color, image, repeat, attachment, position */
-    background: url("background.jpg") no-repeat fixed right top,
-                url("trees.jpg") no-repeat fixed left bottom;
+    /* background: url("background.jpg") no-repeat fixed right top,
+                url("trees.jpg") no-repeat fixed left bottom; */
     background-color: tan;
+}
+
+p {
+    color: white;
 }
 
 /* General navigation control */
@@ -53,3 +57,30 @@ body {
     background-color: (255, 255, 255, 0.4);
     border-radius: 25px;
 }
+
+/* General Grid Style */
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+      width: 100%;
+    }
+}
+
+#row1 img {
+    /* position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 3% .5%; */
+    max-width: 100%;
+    height: auto;
+    border-radius: 30%;
+}
+
+/* Responsive Styles */
